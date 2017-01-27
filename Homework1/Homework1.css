@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 2em;
+    color: darkmagenta
+}
+
+h2 {
+    font-size: 1.5em;
+    color: darkslateblue
+}
+
+table {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: darkviolet;
+    text-align: justify
+}
+
+.image1 {
+    position: absolute;
+    left: 575px;
+    top: 120px
+}
+
+.image2 {
+    position: absolute;
+    left: 425px;
+    top: 765px
+}
+figcaption {
+    position: absolute;
+    left:620px;
+    top: 380px
+}
+
+html {
+    background: #FAEBD7
+}
+body {
+    width: 80%;
+    margin: auto;
+    padding: 30px
+}
+
+p {
+    text-align: center
+}
