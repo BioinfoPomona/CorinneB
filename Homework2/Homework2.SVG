@@ -1,0 +1,43 @@
+<svg width=750 xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle cx="350" cy="40" r="10" stroke="blueviolet" stroke-width="3" fill="deeppink"/>
+    <circle cx="350" cy="65" r="10" stroke="blueviolet" stroke-width="3" fill="deeppink"/>
+    <circle cx="350" cy="90" r="10" stroke="blueviolet" stroke-width="3" fill="deeppink"/>
+    <circle cx="350" cy="115" r="10" stroke="blueviolet" stroke-width="3" fill="deeppink"/>
+    <circle cx="350" cy="140" r="10" stroke="blueviolet" stroke-width="3" fill="deeppink"/>
+    <circle cx="350" cy="165" r="10" stroke="blueviolet" stroke-width="3" fill="deeppink"/>
+    <ellipse cx="415" cy="125" rx="50" ry="20" stroke="aqua" stroke-width="3" fill="fuchsia"/>
+    <ellipse cx="288" cy="125" rx="50" ry="20" stroke="aqua" stroke-width="3" fill="fuchsia"/>
+    <ellipse cx="455" cy="60" rx="90" ry="20" stroke="aqua" stroke-width="3" fill="fuchsia"/>
+    <ellipse cx="245" cy="60" rx="90" ry="20" stroke="aqua" stroke-width="3" fill="fuchsia"/>
+    <line x1="358" y1="34" x2="385" y2="15" stroke="black" stroke-width="3"/>
+    <line x1="340" y1="34" x2="315" y2="15" stroke="black" stroke-width="3"/>
+    <circle cx="390" cy="14" r="5" stroke="dodgerblue" stroke-width="3" fill="lawngreen"/>
+    <circle cx="310" cy="13" r="5" stroke="dodgerblue" stroke-width="3" fill="lawngreen"/>
+    <line x1="175" y1="70" x2="200" y2="45" stroke="limegreen" stroke-width="3"/>
+    <line x1="200" y1="45" x2="220" y2="77" stroke="limegreen" stroke-width="3"/>
+    <line x1="220" y1="77" x2="240" y2="42" stroke="limegreen" stroke-width="3"/>
+    <line x1="240" y1="42" x2="260" y2="77" stroke="limegreen" stroke-width="3"/>
+    <line x1="260" y1="77" x2="280" y2="44" stroke="limegreen" stroke-width="3"/>
+    <line x1="280" y1="42" x2="299" y2="75" stroke="limegreen" stroke-width="3"/>
+    
+    <line x1="380" y1="70" x2="405" y2="45" stroke="limegreen" stroke-width="3"/>
+    <line x1="430" y1="77" x2="407" y2="43" stroke="limegreen" stroke-width="3"/>
+    <line x1="450" y1="43" x2="431" y2="77" stroke="limegreen" stroke-width="3"/>
+    <line x1="471" y1="77" x2="448" y2="43" stroke="limegreen" stroke-width="3"/>
+    <line x1="471" y1="77" x2="495" y2="44" stroke="limegreen" stroke-width="3"/>
+    <line x1="495" y1="42" x2="520" y2="73" stroke="limegreen" stroke-width="3"/>
+    
+    <circle cx="710" cy="40" r=60 stroke="antiquewhite" stroke-width="2" fill="gainsboro"/>
+    <polygon points="70,15 50,80 125,30 30,50 120,70" fill="yellow"/>
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+</svg>
