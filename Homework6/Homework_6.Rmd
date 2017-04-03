@@ -1,0 +1,37 @@
+---
+title: "Homework 6"
+output: html_notebook
+---
+
+__Question 1:__ Choose a country (not the US). 
+
+Use the package maps to show a map of the country:
+
+```{r}
+```
+
+The dataset `world.cities` included in the map package contain information about the location and population of several cities in the world. Create a new data frame containing only the cities in the country you chose:
+
+```{r}
+```
+
+Now take a look the cities, choose a population threshold that will lead to only about 20 cities in your dataset and plot the location of these cities in the country map using the `map.cities` function :
+
+```{r}
+```
+
+Now instead of using `map.cities`, create a new dataframe `myCities` with only the latitude and longitude of the cities you chose above. You are going to need to get this information directly from the `world.cities` dataset.
+
+```{r}
+```
+
+Use the geosphere package to calculate the distances between each pair of cities (use the `distm` function). You will need to add row and column names to the result of `distm`.
+
+```{r}
+```
+
+Use this data frame to perform a PCoA, plot the results and compare to your original graph of the cities.
+
+```{r}
+
+```
