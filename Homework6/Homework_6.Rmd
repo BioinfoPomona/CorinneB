@@ -33,7 +33,7 @@ Now take a look the cities, choose a population threshold that will lead to only
 s2 <- subset(spain, pop > 214000)
 #s2
 map("world", "Spain")
-map.cities(country = "Spain", minpop = 214000)
+map.cities(x = world.cities, country = "Spain", minpop = 214000, label = TRUE)
 ```
 
 Now instead of using `map.cities`, create a new dataframe `myCities` with only the latitude and longitude of the cities you chose above. You are going to need to get this information directly from the `world.cities` dataset.
@@ -49,6 +49,12 @@ Use the geosphere package to calculate the distances between each pair of cities
 library(geosphere)
 #distance matrix
 distances <- distm(myCities, myCities, fun = distHaversine)
+distances = distances/1000
+
+
+distances = data.frame(distances, row.names = s2$name)
+colnames(distances) <- rownames(distances)
+
 distances
 #not sure how to add header names.
 ```
