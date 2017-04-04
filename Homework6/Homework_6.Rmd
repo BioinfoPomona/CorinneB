@@ -8,30 +8,74 @@ __Question 1:__ Choose a country (not the US).
 Use the package maps to show a map of the country:
 
 ```{r}
+library(maps)
+map(database = "world", regions = "Spain", exact = FALSE, boundary = TRUE, 
+    interior = TRUE)
+```
+
+```{r}
+map("world", "Spain")
+map.cities(country = "Spain", capitals = 1)
 ```
 
 The dataset `world.cities` included in the map package contain information about the location and population of several cities in the world. Create a new data frame containing only the cities in the country you chose:
 
 ```{r}
+#newdf <- world.cities$country.etc == "Spain"
+spain <- subset(world.cities, country.etc == "Spain")
+spain
+
 ```
 
 Now take a look the cities, choose a population threshold that will lead to only about 20 cities in your dataset and plot the location of these cities in the country map using the `map.cities` function :
 
 ```{r}
+s2 <- subset(spain, pop > 214000)
+#s2
+map("world", "Spain")
+map.cities(country = "Spain", minpop = 214000)
 ```
 
 Now instead of using `map.cities`, create a new dataframe `myCities` with only the latitude and longitude of the cities you chose above. You are going to need to get this information directly from the `world.cities` dataset.
 
 ```{r}
+myCities <- data.frame(s2$lat, s2$long)
+myCities
 ```
 
 Use the geosphere package to calculate the distances between each pair of cities (use the `distm` function). You will need to add row and column names to the result of `distm`.
 
 ```{r}
+library(geosphere)
+#distance matrix
+distances <- distm(myCities, myCities, fun = distHaversine)
+distances
+#not sure how to add header names.
 ```
 
 Use this data frame to perform a PCoA, plot the results and compare to your original graph of the cities.
 
 ```{r}
+library(ape)
+newdist <- distances/1000
+#newdist
+pcoaRes <- pcoa(newdist)
+pcoaRes
 
+library(plotly)
+
+pcoaResDf <- data.frame(pcoaRes$vectors)
+pcoaResDf
+#still working on it
+```
+
+```{r}
+p <- plot_ly(pcoaResDf, x = ~Axis.1 , y = ~Axis.2, text = rownames(pcoaResDf), type = 'scatter',
+             mode = "markers", marker = list(size = 11)) # width = 800, height = 600) #create a df from our PCoA results, get the vectors part of it and throw into pcoaResDf. The x and y should be columns of the dataframe. Text is the text shown with the points. type is scatter plot, mode could be line but we just want points because scatter plot
+ 
+p <- layout(p, title = "PCoA from Spain City Distances", 
+       xaxis = list(title = "PC 1", autorange='reversed'), #list of parameters to x axis
+       yaxis = list(title = "PC 2", autorange='reversed'))
+ 
+p
 ```
