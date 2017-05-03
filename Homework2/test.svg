@@ -2,18 +2,18 @@
 <line x1="50" y1="450" x2="450" y2="450" stroke="black" stroke-width="2" />
 <line x1="50" y1="450" x2="450" y2="450" stroke="black" stroke-width="2" />
 <line x1="50" y1="450" x2="50" y2="50" stroke="black" stroke-width="2" />
-<text x="10" y="30" font-family="Verdana" font-size="14" fill="red">(100,945)</text>
-<text x="10" y="470" font-family="Verdana" font-size="14" fill="red">(100,236)</text>
-<text x="450" y="470" font-family="Verdana" font-size="14" fill="red">(739,236)</text>
+<text x="10" y="30" font-family="Verdana" font-size="14" fill="red">(82,946)</text>
+<text x="10" y="470" font-family="Verdana" font-size="14" fill="red">(82,13)</text>
+<text x="450" y="470" font-family="Verdana" font-size="14" fill="red">(983,13)</text>
     
-<circle cx="98.8262910798" cy="186.530324401" r="5" fill="blue"></circle>
-<circle cx="118.231611894" cy="50.0" r="5" fill="blue"></circle>
-<circle cx="220.266040689" cy="450.0" r="5" fill="blue"></circle>
-<circle cx="422.456964006" cy="92.8772919605" r="5" fill="blue"></circle>
-<circle cx="209.624413146" cy="249.717912553" r="5" fill="blue"></circle>
-<circle cx="225.273865415" cy="167.348377997" r="5" fill="blue"></circle>
-<circle cx="50.0" cy="392.45416079" r="5" fill="blue"></circle>
-<circle cx="329.186228482" cy="130.112834979" r="5" fill="blue"></circle>
-<circle cx="311.03286385" cy="148.730606488" r="5" fill="blue"></circle>
-<circle cx="450.0" cy="439.28067701" r="5" fill="blue"></circle>
+<circle cx="275.083240844" cy="311.093247588" r="5" fill="blue"></circle>
+<circle cx="240.455049945" cy="244.640943194" r="5" fill="blue"></circle>
+<circle cx="391.842397336" cy="99.7320471597" r="5" fill="blue"></circle>
+<circle cx="50.0" cy="279.796355841" r="5" fill="blue"></circle>
+<circle cx="403.829078801" cy="186.334405145" r="5" fill="blue"></circle>
+<circle cx="420.699223085" cy="436.709539121" r="5" fill="blue"></circle>
+<circle cx="255.105438402" cy="50.857449089" r="5" fill="blue"></circle>
+<circle cx="129.467258602" cy="359.539121115" r="5" fill="blue"></circle>
+<circle cx="343.007769145" cy="50.0" r="5" fill="blue"></circle>
+<circle cx="450.0" cy="450.0" r="5" fill="blue"></circle>
 </svg>
